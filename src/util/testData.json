@@ -1,0 +1,69 @@
+[
+    {
+      "title": "Swedish Massage",
+      "description": "A relaxing massage therapy session using gentle but firm pressure to promote relaxation, ease muscle tension, and create other health benefits.",
+      "price": [
+        {
+          "min60": "$80",
+          "min90": "$140"
+        }
+      ],
+      "image": "https://imgur.com/tTbzG1j.jpg"
+    },
+    {
+      "title": "Deep Tissue Massage",
+      "description": "A type of massage aimed at the deeper tissue structures of the muscle and fascia, also called connective tissue.",
+      "price": [
+        {
+          "min60": "$90",
+          "min90": "$150"
+        }
+      ],
+      "image": "https://imgur.com/LOZt8ya.jpg"
+    },
+    {
+      "title": "Hot Stone Massage",
+      "description": "A specialty massage where smooth, heated stones are used by placing them on the body while they massage other parts of the body.",
+      "price": [
+        {
+          "min60": "$100",
+          "min90": "$160"
+        }
+      ],
+      "image": "https://imgur.com/0pZ5CGZ.jpg"
+    },
+    {
+      "title": "Aromatherapy Massage",
+      "description": "Massage therapy with essential oils added to the massage oil, inhaled through the air and absorbed through the skin.",
+      "price": [
+        {
+          "min60": "$85",
+          "min90": "$145"
+        }
+      ],
+      "image": "https://imgur.com/2eixG1K.jpg"
+    },
+    {
+      "title": "Reflexology",
+      "description": "A system of massage used to relieve tension and treat illness, based on the theory that there are reflex points on the feet, hands, and head linked to every part of the body.",
+      "price": [
+        {
+          "min60": "$75",
+          "min90": "$130"
+        }
+      ],
+      "image": "https://imgur.com/MziQVYD.jpg"
+    },
+    {
+      "title": "Sports Massage",
+      "description": "A form of bodywork geared towards participants in athletics and designed to help prevent injuries, to prepare the body for athletic activity and maintain it in optimal condition.",
+      "price": [
+        {
+          "min60": "$95",
+          "min90": "$155"
+        }
+      ],
+      "image": "https://imgur.com/HdUwuBJ.jpg"
+    }
+  ]
+  
