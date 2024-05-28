@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import { Home } from './views/Home/Home.jsx';
-import { setContext } from '@apollo/client/link/context';
+// import { setContext } from '@apollo/client/link/context';
 import { useRouteContext } from './util/routingContext/routeContext.jsx';
 // import { ChatContainer } from './components/ChatBot/ChatContainer.jsx';
 // import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
@@ -36,7 +36,7 @@ function App() {
 // all routes that use 'const { dispatch } = useRouteContext();' and dispatch their routes to the context API, will be able to controll routing
   const routeContext = useRouteContext();
   const [currentView, setCurrentView] = useState('/');
-
+  const [routeKey, setRouteKey] = useState('/');
 
   useEffect(() => {
     let pathBase = '/'
@@ -48,7 +48,8 @@ function App() {
               setCurrentView(`/`)
             }else{
               setCurrentView(`${pathBase}${key}`)   
-              console.log(currentView)
+              // setRouteKey(key)
+
             }
           }
 
@@ -57,6 +58,12 @@ function App() {
       console.log(routeContext)
 
   }, [routeContext]);
+
+  useEffect(() => {
+    console.log(currentView)
+
+  }, [currentView]);
+
 
 // proper routing
   const router = createBrowserRouter(
@@ -82,9 +89,9 @@ function App() {
     )
   return (
     <>
-     
+     {currentView === '/' ? <Home currRoute={'currentView'} /> : <Home currRoute={currentView} />}
       {/* <ApolloProvider client={client}> */}
-        <RouterProvider router={router}/>
+        {/* <RouterProvider router={router}/> */}
         {/* <ChatContainer/> */}
       {/* </ApolloProvider> */}
 

@@ -22,7 +22,8 @@ import { Box,
   HStack, 
   useColorModeValue,
 } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram, FaGithub, FaDiscord, FaLinkedin, FaArrowUp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaGithub, FaLinkedin, FaArrowUp } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import { BsThreads } from "react-icons/bs";
 import { useRouteContext } from '../../util/routingContext/routeContext';
 import { HamburgerIcon, SearchIcon, ChevronDownIcon } from '@chakra-ui/icons';
@@ -103,12 +104,12 @@ export const Footer = () => {
                 target="_blank"
                 isExternal
               >
-                1411 W 33rd Ave
+                ...
               </Link>
             </Text>
             <Box display="flex" justifyContent="center">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6132.330914483945!2d-105.01660822361546!3d39.78084209409564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7866bb40149b%3A0x433eb9a0251eb7e4!2s4630%20Wyandot%20St%2C%20Denver%2C%20CO%2080211!5e0!3m2!1sen!2sus!4v1714408285448!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14032.512391272201!2d-98.90153501560928!3d26.380973626184748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8664691141dffcbb%3A0xdc3ab749ccda03ab!2s203%20Comanche%20Ln%2C%20Rio%20Grande%20City%2C%20TX%2078582!5e0!3m2!1sen!2sus!4v1716602517213!5m2!1sen!2sus"
                 width="200"
                 height="150"
                 style={{ border: 0 }}
@@ -200,12 +201,12 @@ export const Footer = () => {
       </Link>
 
       <Flex justifyContent="center" mt={4}>
-        <Link href="https://www.facebook.com" isExternal mx={2}><Icon as={FaFacebook} w={6} h={6} /></Link>
-        <Link href="https://www.instagram.com" isExternal mx={2}><Icon as={FaInstagram} w={6} h={6} /></Link>
-        <Link href="https://www.threads.com" isExternal mx={2}><Icon as={BsThreads} w={6} h={6} /></Link>
-        <Link href="https://www.discord.com" isExternal mx={2}><Icon as={FaDiscord} w={6} h={6} /></Link>
-        <Link href="https://www.github.com" isExternal mx={2}><Icon as={FaGithub} w={6} h={6} /></Link>
-        <Link href="https://www.linkedin.com" isExternal mx={2}><Icon as={FaLinkedin} w={6} h={6} /></Link>
+      <Link href="https://www.facebook.com/profile.php?id=61558757112366" isExternal mx={2}><Icon as={FaFacebook} w={6} h={6} /></Link>
+        <Link href="https://www.instagram.com/guyycodes" isExternal mx={2}><Icon as={FaInstagram} w={6} h={6} /></Link>
+        <Link href="https://www.threads.net/@guyycodes" isExternal mx={2}><Icon as={BsThreads} w={6} h={6} /></Link>
+        <Link href="https://x.com/UpliftingTech" isExternal mx={2}><Icon as={FaXTwitter} w={6} h={6} /></Link>
+        <Link href="https://www.github.com/guyycodes" isExternal mx={2}><Icon as={FaGithub} w={6} h={6} /></Link>
+        <Link href="https://www.linkedin.com/in/guymorganb" isExternal mx={2}><Icon as={FaLinkedin} w={6} h={6} /></Link>
       </Flex>
 
       <Text mt={4} textDecoration={'underline'}>© 2024 LevelUp Apps & Software LLC</Text>

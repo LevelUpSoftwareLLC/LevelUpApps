@@ -18,25 +18,25 @@ const testimonials = [
   {
     name: 'Angela H.',
     stars: 5,
-    source: 'Google Review',
+    source: '',
     text: "Morgan and his team did an excellent job on our project! They were timely, professional and friendly. They went way above and beyond to ensure we were happy and did a great job of letting us know the plan for the day and of cleaning up. The work turned out great. Tim couldn't be nicer! We were very happy!",
   },
   {
     name: 'Tiffany C.',
     stars: 5,
-    source: 'Google Review',
-    text: 'They did a quick development job for my small business and everything turned out great! We had a some basic features we needed implemented. Communication was seamless and everything went smoothly.',
+    source: '',
+    text: 'They did a quick development job for my small business and everything turned out great! We had a several features we needed to implement. Communication was seamless and everything went smoothly.',
   },
   {
     name: 'Jenna N.',
     stars: 5,
-    source: 'Google Review',
+    source: '',
     text: 'This company was so easy to work with and has great prices. I was needing some ongoing service from a previous project I had paid to have developed. Definitely will use this company again.',
   },
   {
     name: 'JT V.',
     stars: 5,
-    source: 'Google Review',
+    source: '',
     text: 'Excellent job, appreciate how efficent and easy they were to work with, very different than any experience I had before.',
   },
 ];
