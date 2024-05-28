@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { VStack, HStack, Box, Text, Image, useColorModeValue, useBreakpointValue, useTheme} from '@chakra-ui/react';
 import { LavaButtonText } from '../../util/buttons/lavaButton/lavaText'
 import logo from '../../../public/assets/images/logo.png'
-import logo2 from '../../../public/assets/images/logo2.png'
+
 
 
 export const PortfolioContainer = ({ changeIndex, numTags, currIndex }) => {

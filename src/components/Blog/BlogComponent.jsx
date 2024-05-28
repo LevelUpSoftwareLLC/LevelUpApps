@@ -54,7 +54,7 @@ export const BlogComponent = forwardRef((props, ref) => {
 useEffect(() => {
   const fetchBlogData = async () => {
     try {
-      const targetUrl = 'https://192.168.30.251/medium-proxy/'; // This should match your Nginx proxy setup
+      const targetUrl = 'https://192.168.30.251/medium-proxy/'; // This should match your proxy setup
       const response = await fetch(targetUrl, {
         method: 'GET', // Method is GET by default; included here for clarity
         headers: {
