@@ -55,12 +55,12 @@ function App() {
 
         }
         
-      console.log(routeContext)
+      // console.log(routeContext)
 
   }, [routeContext]);
 
   useEffect(() => {
-    console.log(currentView)
+    // console.log(currentView)
 
   }, [currentView]);
 

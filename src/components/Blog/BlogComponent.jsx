@@ -83,7 +83,7 @@ useEffect(() => {
   fetchBlogData();
 }, []);
 useEffect(() => {
-  console.log(blogData)
+  // console.log(blogData)
 }, [blogData]);
 
 
