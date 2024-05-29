@@ -48,7 +48,6 @@ export const Home = ( { currRoute } ) => {
     switch (route) {
       case '/Services':
           servicesRef.current && servicesRef.current.scrollIntoView({ behavior: 'smooth' });
-          
         break;
       case '/Designs':
           designsRef.current && designsRef.current.scrollIntoView({ behavior: 'smooth' });

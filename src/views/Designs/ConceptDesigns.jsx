@@ -13,7 +13,7 @@ export const SomeDesigns = forwardRef((props, ref) => {
     100% { transform: translateX(-50%); }
   }
 
-  animation: scrollHorizontal ${designItems.length*1}s linear infinite;
+  animation: scrollHorizontal ${designItems.length*.5}s linear infinite;
 
   &:hover {
     animation-play-state: paused;
@@ -30,7 +30,7 @@ export const SomeDesigns = forwardRef((props, ref) => {
         px={4}
       >
         <Heading ref={ref} color={textColor}>
-          Our Designs
+          Design Samples
         </Heading>
         <Box overflow="hidden" width="100%">
           <Box

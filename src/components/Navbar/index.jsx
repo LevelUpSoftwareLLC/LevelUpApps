@@ -35,7 +35,7 @@ export const NavBar_WithContext = () =>{
 
  return(
     <>
-        <Navbar handleRouting={handleRouting} position={'fixed'} opacity={.9}/>
+        <Navbar handleRouting={handleRouting} position={'fixed'} opacity={.9} zIndex={100}/>
         <Box paddingTop='10vh'>
                {/* moves the content below the nav down  */}
         </Box>

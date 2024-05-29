@@ -87,7 +87,7 @@ export const Slide2 = ({handleRouting, activeIndex, Headline, text1, text2, text
     {part1}?
   </Heading>
  
-  <Box size={{ base: 'sm', lg: "md" }} mb={4} textAlign="center" color={textColor}>
+  <Box size={{ base: 'sm', lg: "md" }} mb={4} textAlign="center">
     {part2}
   </Box>
 

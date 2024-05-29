@@ -30,54 +30,6 @@ export const Sidebar = ( { handleRouting } ) => {
     <DrawerBody>
         <VStack spacing={4} align="stretch">
         <Accordion allowMultiple>
-            
-        <AccordionItem>
-            <AccordionButton>
-            <Box flex="1" textAlign="left">
-                Residential
-            </Box>
-            <AccordionIcon />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-            <VStack align="stretch">
-                <Link onClick={(e) => {handleRouting("Full_Rehabs")}}>
-                    Full Rehabs
-                </Link>
-                <Link onClick={(e) => {handleRouting("Investment_Property_Analysis")}}>
-                Investment Property Analysis
-                </Link>
-                <Link onClick={(e) => {handleRouting("Kitchen")}}>
-                Kitchen
-                </Link>
-                <Link onClick={(e) => {handleRouting("Bathroom")}}>
-                Bathroom
-                </Link>
-                <Link onClick={(e) => {handleRouting("Room_Addition")}}>
-                Room Addition
-                </Link>
-            </VStack>
-            </AccordionPanel>
-        </AccordionItem>
-            {/* Commercial Section */}
-        <AccordionItem>
-            <AccordionButton>
-            <Box flex="1" textAlign="left">
-            Commercial
-            </Box>
-            <AccordionIcon />
-            </AccordionButton>
-            <AccordionPanel pb={4}>
-            <VStack align="stretch">
-                <Link  onClick={(e) => {handleRouting("Hotel_Project_Improvement_Plans")}}>
-                Hotel Project Improvement Plans
-                </Link>
-                <Link  onClick={(e) => {handleRouting("Delinquent_Sales_Tax_Audition")}}>
-                Delinquent Sales Tax Audition
-                </Link>
-            </VStack>
-            </AccordionPanel>
-        </AccordionItem>
-            {/* Info Section */}
         <AccordionItem>
             <AccordionButton>
                 <Box flex="1" textAlign="left">
@@ -87,28 +39,22 @@ export const Sidebar = ( { handleRouting } ) => {
             </AccordionButton>
             <AccordionPanel pb={4}>
                 <VStack align="stretch">
-                <Link onClick={(e) => {handleRouting("About_Us")}}>
-                    About Us
+                <Link onClick={(e) => {handleRouting("Services")}}>
+                    About
                 </Link>
-                <Link onClick={(e) => {handleRouting("Gallery")}}>
-                    Gallery
+                <Link onClick={(e) => {handleRouting("Portfolio")}}>
+                    Portfolio
                 </Link>
                 <Link onClick={(e) => {handleRouting("Blog")}}>
                     Blog
                 </Link>
                 </VStack>
             </AccordionPanel>
-            
         </AccordionItem>
         <AccordionItem>
-            <Link onClick={(e) => {handleRouting("City_Code")}}>
+            <Link onClick={(e) => {handleRouting("Designs")}}>
                 <Box p={4} flex="1" textAlign="left" borderBottomWidth="1px">
-                    Permits & City Code Management
-                </Box>
-            </Link>
-            <Link onClick={(e) => {handleRouting("Available_Homes")}}>
-                <Box p={4} flex="1" textAlign="left" borderBottomWidth="1px">
-                    Available Homes
+                    Designs
                 </Box>
             </Link>
             <Link onClick={(e) => {handleRouting("Contact")}}>

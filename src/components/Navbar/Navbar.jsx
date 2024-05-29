@@ -21,7 +21,7 @@ import { CustomGooeyButton } from '../../util/buttons/GooeyButton/gButton';
 
 // The Navbar functional component definition
 const ComponentNavbar = ({handleRouting, ...rest}) => {
-  const boxSize = useBreakpointValue({ base: '100vw' ,sm:'100%' });
+  // const boxSize = useBreakpointValue({ base: '100vw' ,sm:'100%' });
   const buttonTextColor = useColorModeValue('button.text.light', 'button.text.dark');
   // State hook to manage open/close status of a sidebar/drawer
     const [isOpen, setIsOpen] = useState(false);
@@ -34,15 +34,21 @@ const ComponentNavbar = ({handleRouting, ...rest}) => {
 
   return (
     <>
-    <Box bg="gray.900" py={2} zIndex={3} {...rest}>
+    <Box bg="gray.900" py={2} zIndex={3} {...rest} flexDir={{base: 'column', sm: 'row'}}>
 
-    <Flex alignItems="center" >
+    <Flex 
+    // alignItems="center" 
+    >
+      
       {/* Box for images */}
       <Box 
+        position={'absolute'}
+        ml={{base:'1rem', sm:'auto'}}
         display="flex" 
         alignItems="center" 
         justifyContent={{ base: 'flex-start', sm: 'space-around' }} 
         width='1rem' height="3rem"
+        zIndex={100}
       >  
         <a href="index.html">
           <Image 
@@ -50,13 +56,26 @@ const ComponentNavbar = ({handleRouting, ...rest}) => {
             transform='scaleX(1.75) scaleY(1.75)'  
             alt="Logo" width="auto" ml={10} 
             borderRadius='50%' 
+           
           />
         </a>
-        <LavaButton 
-          ml={{base:'40%', sm:'auto'}} 
-          display={{ base: 'flex', sm:'none,', md: 'flex' }} 
-          image={brand} alt="Brand" width={boxSize} 
-          transform={'translateX(calc(-55%))'}
+        <Image
+          src={brand}
+          // ml={{base:'0%', sm:'auto'}} 
+          // display={{ base: 'flex', sm:'none', md: 'flex' }} 
+          alt="Brand" 
+          maxW={".8rem"}
+          transform='scaleX(25) scaleY(24) translateY(9%)'  
+
+          bg={'white'}
+          ml={40}
+          h={.5}
+          mb={3} 
+          pl={.5}
+          pr={.2}
+          
+          borderRadius={.2}
+          zIndex={-1}
         />
       </Box>
         {/* Box for buttons */}
@@ -78,15 +97,16 @@ const ComponentNavbar = ({handleRouting, ...rest}) => {
         </Box>
         <IconButton
           display={{ base: 'flex', sm: 'none' }}
+          flexDir={{base: 'column', sm: 'row'}}
           size={'lg'}
           icon={<HamburgerIcon />}
           color={'white'}
           variant="ghost"
           aria-label="Toggle Navigation"
-          justifyContent={'space-between'}
+          // justifyContent={'space-between'}
           onClick={toggleDrawer}  /*Button to toggle the navigation drawer on smaller screens.*/
-          ml={{base:"70%", sm:"calc(100vw - 15vw)"}} // moves it all the way left
-          mr={{ base: '4%', sm: '5%' }}
+          ml={{base:"88%"}} // moves it all the way left
+          // mr={{ base: '4%', sm: '5%' }}
         />
       </Flex>
 

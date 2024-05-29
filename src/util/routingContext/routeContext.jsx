@@ -14,7 +14,7 @@ const initialState = {
         Services: "",     
         Estimates: "",    
         Portfolio: "",    
-        Contact: "",
+
         Career:"",
         Admin:"",
         Blog: "",     

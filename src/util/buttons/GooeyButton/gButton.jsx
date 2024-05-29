@@ -195,7 +195,6 @@ const GooeyButton = ( { button1Text, button2Text, ...rest } ) => {
             zIndex: 2,
             transition: 'transform 0.5s var(--elastic), background-size 0.25s ease-in-out, filter 0.5s ease-in-out',
             transform: 'translate(calc(var(--x) - 50%), calc(var(--y) - 50%))',
-            zIndex: 2,
             pointerEvents: 'none',
           }}
           _hover={{

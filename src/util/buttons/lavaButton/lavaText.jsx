@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, keyframes, Image, Link, chakra } from '@chakra-ui/react';
+import { Box, Button, keyframes, Image, Link, chakra, Text } from '@chakra-ui/react';
 
 // Define keyframes for animations
 const move = (distance, bubbleStartColor, bubbleEndColor) => keyframes`
@@ -60,14 +60,17 @@ const LavaButtonComponent = ({ text, textColor, background, effectBackground, bu
     >
    
       <Button
-        onClick={handleClick}
+        onClick={(e)=>{
+          e.preventDefault();
+          handleClick
+        }}
         {...rest}
         zIndex={5}
         id="gooey-button"
         p="2rem"
         fontSize="1.4rem"
         border="none"
-        color={textColor}
+        color={'white'}
         filter="url('#gooey')"
         position="relative"
         bg={background}
@@ -79,8 +82,8 @@ const LavaButtonComponent = ({ text, textColor, background, effectBackground, bu
           // Include any other property you want to remain unchanged on hover
         }}
       >
-        <Link href="index.html" >
-            {text}
+        <Link href="index.html" zIndex={50}>
+            <Text>{text}</Text>
         </Link>
         <Box position="absolute" top={0} left={0} bottom={0} right={4} className="bubbles">
           {bubbles}

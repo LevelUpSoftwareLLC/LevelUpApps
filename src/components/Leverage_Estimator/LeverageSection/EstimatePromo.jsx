@@ -4,8 +4,6 @@ import {Box, VStack, Text, Button, Modal } from '@chakra-ui/react';
 import { FaArrowRight } from 'react-icons/fa';
 import { Oauth2 } from './Modal/OAUTH2Modal';
 
-
-
 export const EstimatePromo = () => {
   const [showEstimation, setShowEstimation] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
