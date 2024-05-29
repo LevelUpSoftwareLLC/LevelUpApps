@@ -11,9 +11,8 @@ import {
     ModalCloseButton,
     UnorderedList,
     ListItem,
+    Button
   } from '@chakra-ui/react';
-
-
 
 export const WorkHere = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +24,6 @@ export const WorkHere = () => {
         event.preventDefault();
         openModal();
       };
-    
       return (
         <>
           <Box>
@@ -35,9 +33,9 @@ export const WorkHere = () => {
             <Text fontSize={{ base: 'md', md: 'lg' }}>
               Join our team of innovative thinkers, project managers and skilled crafts-men and women. Check out our current job openings.
             </Text>
-            <Link color="blue.500" display="inline-block" onClick={handleLinkClick}>
+            <Button bg={'gray.900'} color="blue.500" p={1} display="inline-block" onClick={handleLinkClick}>
               View Openings
-            </Link>
+            </Button>
     
             <Modal isOpen={isOpen} onClose={closeModal}>
             <ModalOverlay />

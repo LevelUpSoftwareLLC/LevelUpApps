@@ -15,9 +15,6 @@ return (
     bg="none"  
     align="center" 
     color={'white'}
-    // justify="space-around" 
-    // minH="100vh" 
-    // transform={'translateY(calc(0vh - 65vh))'}
     >
 
     {/* Begin Contact Section */}

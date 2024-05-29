@@ -85,3 +85,33 @@ export const Oauth2 = ({ onClose }) => {
   //     <Button onClick={onClose} variant="ghost">Cancel</Button>
   //   </ModalFooter>
   // </ModalContent>
+
+  // Create a new RTCPeerConnection
+// const peerConnection = new RTCPeerConnection();
+
+// // Listen for ICE candidates to send to the other peer
+// peerConnection.onicecandidate = event => {
+//     if (event.candidate) {
+//         console.log("New ICE candidate: ", event.candidate);
+//         // Here you would typically send the candidate to the remote peer via your signaling channel
+//     }
+// };
+
+// // Handling data channels
+// const dataChannel = peerConnection.createDataChannel("myChannel");
+
+// dataChannel.onopen = () => {
+//     console.log("Data channel is open and ready to be used.");
+// };
+
+// dataChannel.onmessage = event => {
+//     console.log("New message from data channel:", event.data);
+// };
+
+// // Setup handlers to receive data channel from the remote peer
+// peerConnection.ondatachannel = event => {
+//     const receiveChannel = event.channel;
+//     receiveChannel.onmessage = event => {
+//         console.log("Received message:", event.data);
+//     };
+// };

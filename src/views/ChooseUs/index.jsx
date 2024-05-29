@@ -17,11 +17,7 @@ export const Why = forwardRef((props, ref) => {
               display='flex' 
               flexDirection={'row'} 
               flexWrap={{base:'wrap',sm:'nowrap'}}
-              // justifyContent={'space-between'} 
               color={textColor} 
-             
-              // transform due to tag cloud abstract complexities
-              // transform={'translateY(calc(0vh - 65vh))'}
               alignItems="flex-start"
               >
               <Box width={['100%','45%']} >

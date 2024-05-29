@@ -60,9 +60,9 @@ const LavaButtonComponent = ({ text, textColor, background, effectBackground, bu
     >
    
       <Button
-        onClick={(e)=>{
+        onClick={(e) => {
           e.preventDefault();
-          handleClick
+          handleClick(); 
         }}
         {...rest}
         zIndex={5}

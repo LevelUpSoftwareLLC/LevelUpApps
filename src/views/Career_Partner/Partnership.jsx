@@ -1,8 +1,5 @@
 import React, {useState} from 'react';
-import { Box, Flex, Text, Image, VStack, Link, Button, Input, FormControl, FormLabel, IconButton, Container, Spacer } from '@chakra-ui/react';
-
-
-
+import { Text} from '@chakra-ui/react';
 
 export const PartnerComponent = () => {
 
@@ -24,7 +21,6 @@ return (
               that increase value, reduce risk, and 
               <Text as="span" fontWeight="bold"> partner </Text> with you.
             </Text>
-          {/* <CareerOpportunities/> */}
         </>
 
   );

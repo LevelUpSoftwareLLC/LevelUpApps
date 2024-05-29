@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Box, Flex, Link, Text, Image, Button, Grid, GridItem } from "@chakra-ui/react";
 
 export const Section = ({ backgroundImage, children, onClick }) => {
+  const [flexValue, setFlexValue] = useState(1);
+
+  const handleClick = () => {
+    setFlexValue(13); // Set flex to 13 on click
+    setTimeout(() => {
+      setFlexValue(1); // Revert flex to 1 after 3 seconds
+    }, 3000);
+    
+  };
     return (
     <Flex
+   
       borderRadius={'25px'}  
       marginX={1}
-      flex={1}
+      flex={flexValue}
       justifyContent="center"
       alignItems="center"
       h="100%"
@@ -16,7 +26,7 @@ export const Section = ({ backgroundImage, children, onClick }) => {
       color="#ffffff"
       transition="flex 0.5s ease"
       position="relative"
-      _hover={{ flex: 13 }}
+      onClick={handleClick}
       backgroundImage={backgroundImage}
     >
       <Box
@@ -32,7 +42,7 @@ export const Section = ({ backgroundImage, children, onClick }) => {
         transition="background-color .8s ease"
         _hover={{ backgroundColor: "rgba(0, 0, 0, 0.95)" }}
       >
-      <Link
+      <Box
         onClick={onClick}
         position="absolute"
         top={0}
@@ -50,7 +60,7 @@ export const Section = ({ backgroundImage, children, onClick }) => {
         h="100%"
       >
         {children}
-      </Link>
+      </Box>
       </Box>
       <Box
       

@@ -17,9 +17,6 @@ const Theme = extendTheme({
         border: "0px",
         width: '100%',
       },
-      // 'html':{
-      //   width: '100%',
-      // }, 
     }),
   },
   colors: {
@@ -35,9 +32,7 @@ const Theme = extendTheme({
         bg: 'gray.600'
       }
     },
-
-  }
-});
+  }});
 
 
 export default Theme;

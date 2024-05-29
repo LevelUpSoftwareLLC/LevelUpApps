@@ -40,7 +40,7 @@ export const PromotionalComponent = forwardRef((props, ref) => {
         </Text>
         
         <Box w={'auto'} mb={{ base: 8, md: 0 }} >
-          <Image src={cubes} alt="LevelUp Cube Image" objectFit="cover" height={'auto'} overflow={'visible'}/>
+          <Image src={cubes} alt="LevelUp Cube Image" objectFit="cover" height={'auto'} />
         </Box>
 
       </VStack>

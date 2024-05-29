@@ -165,6 +165,21 @@ export const WorkSection = ({dynamicTitle, service, imagePaths , newImagePaths }
 };
 
 export const ModalForImages = ({ imagePath, onClose }) => {
+      // const imageDescriptions = {
+    //     'image1.jpg': {
+    //       title: 'Image 1',
+    //       description: 'Description for Image 1',
+    //       bullets: ['Bullet 1', 'Bullet 2', 'Bullet 3'],
+    //     },
+    //     'image2.jpg': {
+    //       title: 'Image 2',
+    //       description: 'Description for Image 2',
+    //       bullets: ['Bullet 1', 'Bullet 2', 'Bullet 3'],
+    //     },
+    //     // Add more image descriptions as needed
+    //   };
+
+    // const { title, description, bullets } = imageDescriptions[imagePath] || {};
   return (
     <Modal isOpen={imagePath !== null} onClose={onClose} size="xl">
       <ModalOverlay />

@@ -21,24 +21,28 @@ export const ExpandCard = () => {
     setSlideIndex(null);
   };
 
-  const renderText = (text) =>{
+  const renderText = (text, size) => {
+    // Calculate dynamic sizes based on the provided 'size' parameter
+    const baseSize = `${size}rem`; // Default size for small screens
+    const mdSize = `${size * 1.05}rem`; // Slightly larger on medium screens
+    const lgSize = `${size * 1.25}rem`; // Largest size for large screens
+  
     return (
-    <>
-   <Text
-        fontFamily="EB Garamond"
-        paddingX={2}
-        lineHeight="1.5"
-        fontWeight="bold"
-        fontSize={{ base: ".95rem", md: "1rem", lg: "1.25rem" }}
-        textShadow="1px 1px 1px rgba(255, 255, 255, 0.1), -1px -1px 1px rgba(255, 255, 255, 0.0), 4px 4px 5px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(255, 255, 255, 0.1)"
-        color="white"
-      >
-        {text}
-      </Text>
-    </>
-    )
+      <>
+        <Text
+          fontFamily="EB Garamond"
+          paddingX={2}
+          lineHeight="1.5"
+          fontWeight="bold"
+          fontSize={{ base: baseSize, md: mdSize, lg: lgSize }} // Dynamic font size based on 'size'
+          textShadow="1px 1px 1px rgba(255, 255, 255, 0.1), -1px -1px 1px rgba(255, 255, 255, 0.0), 4px 4px 5px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(255, 255, 255, 0.1)"
+          color="white"
+        >
+          {text}
+        </Text>
+      </>
+    );
   }
-
   return (
     <Box boxSizing="border-box" >
       <Flex h="50vh" >
@@ -58,8 +62,13 @@ export const ExpandCard = () => {
               zIndex={3}
               objectFit="contain"
               transition="background-color .8s ease"
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
+              onClick={
+                () => {
+                  handleMouseEnter(index)
+                  setTimeout(() => {
+                    handleMouseLeave()
+                  }, 3000)
+              }}
               backgroundColor={
                 slideIndex === index ? "rgba(0, 0, 0, 0.95)" : "transparent"
               }
@@ -75,7 +84,8 @@ export const ExpandCard = () => {
                   objectFit="contain"
                   borderRadius={'50%'}
               />
-            {slideIndex === index && renderText(section.description)}
+            {slideIndex === index ? renderText(section.description, 1.0) : renderText(section.description, .5)}
+            {/* {renderText(section.description)} */}
           </Box>
           )}
           {/* moves the headline text */}

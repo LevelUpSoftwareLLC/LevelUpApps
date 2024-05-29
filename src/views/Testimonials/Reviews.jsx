@@ -40,6 +40,7 @@ const testimonials = [
     text: 'Excellent job, appreciate how efficent and easy they were to work with, very different than any experience I had before.',
   },
 ];
+
 export const CustomerReviews = forwardRef((props, ref) => {
 
   const TextColor = useColorModeValue('button.text.light', 'button.text.dark');

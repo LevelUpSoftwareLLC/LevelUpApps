@@ -6,7 +6,6 @@ import {
   HStack,
   Image, 
   useColorModeValue, 
-  useBreakpointValue, 
   useTheme, 
   Container
 } from '@chakra-ui/react';
@@ -27,8 +26,6 @@ return (
     justifyContent="space-between" 
     spacing={0} 
     color={textColor} 
-    // alignItems="flex-start" 
-    // transform={'translateY(calc(0vh - 65vh))'}
   >
   {/* Creates the gray verticle line*/}
     <Box 

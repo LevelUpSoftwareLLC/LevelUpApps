@@ -5,9 +5,7 @@ import { ImageCarousel } from '../../components/Carousel/Carousel';
 import { ServicesSection } from '../Services';
 import { Why } from '../ChooseUs';
 import { PorfolioSection } from '../Portfolio';
-import { InstantQuoteMenu } from '../../components/InstantQuote';
 import { ContactComponent } from '../../components/Contact';
-import { Booking } from '../../components/Booking'; 
 import { BlogComponent } from '../../components/Blog/BlogComponent';
 import { SomeDesigns } from '../Designs/ConceptDesigns';
 import { CustomerReviews } from '../Testimonials/Reviews'; 
@@ -30,8 +28,6 @@ export const Home = ( { currRoute } ) => {
   const contactRef = useRef(null);
   const reviewsRef = useRef(null);
 
-  
-  
   // Function to handle routing based on the item clicked inside the carousel slide
   const handleRouting = (clickedText) => {
     let currentRoute;
@@ -140,7 +136,7 @@ export const Home = ( { currRoute } ) => {
       <Box>
         <Footer />
       </Box>
-      {/* <InstantQuoteMenu/>  */}
+  
       
     </Flex>
     

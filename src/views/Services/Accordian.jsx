@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { tagsForTheCloud } from '../../util/dataObjects/tagCloud/TagCloudCLasses';
 import { getDescriptionForHeader } from './LerMoreFilter';
-import { motion } from 'framer-motion';
+
 
 export const AccordionComponent = () => {
 

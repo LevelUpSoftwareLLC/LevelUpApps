@@ -25,7 +25,6 @@ export const WhyChooseUsContainer = () => {
               comprised of experts who bring knowledge and efficient solutions to every
               project, ensuring exceptional outcomes.
             </Text>
-
             <Box 
               display="flex" 
               justifyContent="flex-start"

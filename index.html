@@ -19,7 +19,7 @@
  
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="Level up logo">
-  <meta name="twitter:url" content="https://x.com/UpliftingTech">
+  <meta name="twitter:url" content="https://x.com/GuyCodesio">
   <meta name="twitter:title" content="LevelUp Apps & Software – Elevating Digital Experiences">
   <meta name="twitter:description" content="Discover tailor-made software solutions that enhance your digital presence and drive technology innovation.">
   <meta name="twitter:image" content="https://imgur.com/9cvyHrQ.png">
@@ -27,32 +27,42 @@
 
   <!-- Additional Links -->
   <link rel="canonical" href="http://www.levelupco.com">
-  <!-- <link rel="icon" sizes="16x16" href="https://imgur.com/UshU2z4.png" type="image/png"> -->
-  <!-- <link rel="icon" sizes="32x32" href="https://imgur.com/YxNCdwD.png" type="image/png"> -->
-  <!-- <link rel="icon" sizes="48x48" href="https://imgur.com/1u6jXSA.png" type="image/png"> -->
+  <link rel="icon" sizes="16x16" href="https://imgur.com/UshU2z4.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="https://imgur.com/YxNCdwD.png" type="image/png">
+  <link rel="icon" sizes="48x48" href="https://imgur.com/1u6jXSA.png" type="image/png">
+
+  <meta name="browser-errors-url" content="https://guymorganb.com/">
 
   
   <!-- Schema.org structured data -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Level Up Apps & Software LLC",
-      "url": "https://www.levelupco.com",
-      "telephone": "+1-303-495-8899",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "203 Comanche Lane",
-        "addressLocality": "Rio Grande City",
-        "addressRegion": "South Texas",
-        "postalCode": "78582",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 26.572004,
-        "longitude": -98.792184
-      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Level Up Apps and Software LLC",
+        "description": "Level Up Apps and Software LLC is a leading software development company specializing in web and mobile applications.",
+        "url": "https://www.levelupco.com",
+        "founder": {
+          "@type": "Person",
+          "name": "Guy Morgan Beals"
+        },
+        "telephone": "+1-303-495-8899",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "203 Comanche Lane",
+          "addressLocality": "Rio Grande City",
+          "addressRegion": "TX",
+          "postalCode": "78582",
+          "addressCountry": "US"
+        },
+        "location": {
+          "@type": "Place",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "26.572004",
+            "longitude": "-98.792184"
+          }
+        },
     "sameAs": [
       "https://www.instagram.com/guyycodes/",
       "https://www.linkedin.com/in/guymorganb/",
@@ -61,14 +71,8 @@
       "https://www.instagram.com/levelupsoftware.co",
       "https://www.guymorganb.com",
       "https://www.levelupco.com",
-      "https://x.com/UpliftingTech"
+      "https://x.com/GuyCodesio"
     ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Software Products",
@@ -78,7 +82,7 @@
           "itemOffered": {
             "@type": "SoftwareApplication",
             "name": "Guymorganb.com",
-            "applicationCategory": "Website",
+            "applicationCategory": "BusinessApplication",
             "operatingSystem": ["Web", "Android", "iOS"],
             "softwareVersion": "1.0",
             "applicationSubCategory": "BusinessApplication",
@@ -96,7 +100,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Software & Web Development",
-            "applicationCategory": "Service",
+            "applicationCategory": "Website",
             "operatingSystem": ["Web", "Android", "iOS"],
             "offers": {
               "@type": "Offer",
@@ -128,6 +132,28 @@
         });
       }
     </script>
+    <script>
+      // Retrieve the error handling URL from the meta tag
+      const errorUrl = document.querySelector('meta[name="browser-errors-url"]').content;
+      
+      // Global error handler
+      window.onerror = function(message, source, lineno, colno, error) {
+          const errorData = JSON.stringify({
+              message: message,
+              source: source,
+              lineno: lineno,
+              colno: colno,
+              error: error ? error.stack : 'no stack trace available'
+          });
+      
+          // Send error data to the server
+          navigator.sendBeacon(errorUrl, errorData);
+      
+          // Prevent default error logging
+          return true;
+      };
+      </script>
+      
   </body>
 </html>
 <!-- Title: "Empowering Digital Excellence | LevelUp Apps & Software LLC"

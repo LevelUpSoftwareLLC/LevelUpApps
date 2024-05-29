@@ -51,13 +51,10 @@ export const PorfolioSection = forwardRef((props, ref) => {
               ref={ref} 
               display='flex' 
               flexDirection={['column','row']} 
-              // justifyContent={'space-between'} 
               color={'white'} 
-              // width={["auto"]}
-              // transform={'translateY(calc(0vh - 65vh))'}
               alignItems="flex-start"
               >
-                {/* width={['30%','45%']} */}
+
             <Box  width={['30%','45%']}>
               <PortfolioContainer currIndex={index} changeIndex={setIndex} numTags={portfolioTags.length}/>
             </Box>

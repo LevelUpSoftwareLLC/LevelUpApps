@@ -125,21 +125,21 @@ export const Footer = () => {
             Contact Us
           </Heading>
           <Text>
-            <Link onClick={() => onOpen('email')}>info@levelupco.com</Link>
+            <Button color={'white'} bg={'transparent'} onClick={() => onOpen('email')}>info@levelupco.com</Button>
           </Text>
           <Text>
-            <Link onClick={() => onOpen('phone')}>Contact</Link>
+          <Button color={'white'} bg={'transparent'} onClick={() => onOpen('phone')}>Contact</Button>
           </Text>
         </Box>
         {/* Home */}
         <Box width={['100%', '50%', '25%']} mb={8}>
           <UnorderedList styleType="none">
             <ListItem>
-              <Link onClick={() => window.scrollTo(0, 0)}>HOME</Link>
+            <Button color={'white'} bg={'transparent'} onClick={() => window.scrollTo(0, 0)}>HOME</Button>
             </ListItem>
 
-            <ListItem><Link onClick={() => handleRouting("Portfolio")}>Portfolio</Link></ListItem>
-            <ListItem><Link onClick={() => handleRouting("Services")}>About Us</Link></ListItem>
+            <ListItem><Button color={'white'} bg={'transparent'} onClick={() => handleRouting("Portfolio")}>Portfolio</Button></ListItem>
+            <ListItem><Button color={'white'} bg={'transparent'}onClick={() => handleRouting("Services")}>About Us</Button></ListItem>
 
             <Menu matchWidth>
 
@@ -168,13 +168,13 @@ export const Footer = () => {
         >
           <UnorderedList styleType="none">
             <ListItem>
-              <Link onClick={() => handleRouting("Blog")}>Blog</Link>
-              </ListItem>
+              <Button color={'white'} bg={'transparent'} onClick={() => handleRouting("Blog")}>Blog</Button>
+            </ListItem>
             <ListItem>
-              <Link onClick={() => handleRouting("Career")}>Careers</Link>
-              </ListItem>
+              <Button color={'white'} bg={'transparent'} onClick={() => handleRouting("Career")}>Careers</Button>
+            </ListItem>
             <ListItem>
-              <Link onClick={() => handleRouting("Designs")}>Designs</Link>
+              <Button color={'white'} bg={'transparent'} onClick={() => handleRouting("Designs")}>Designs</Button>
               </ListItem>
             <Menu matchWidth >
                 <MenuButton as={Button} variant={TextColor} pl={6}>
@@ -214,9 +214,9 @@ export const Footer = () => {
       <VStack flexDirection={'column'}>
         
         <HStack flexDirection={'row'} justifyContent={'center'}>
-            <Link onClick={() => handleRouting("Terms")}>Terms of Service</Link>
+            <Button color={'white'} bg={'transparent'} onClick={() => handleRouting("Terms")}>Terms of Service</Button>
               <Box width={'1rem'}/>
-            <Link onClick={() => handleRouting("Privacy")}>Privacy Policy</Link>
+            <Button color={'white'} bg={'transparent'} onClick={() => handleRouting("Privacy")}>Privacy Policy</Button>
         </HStack>
       
           <Menu matchWidth>
